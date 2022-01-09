@@ -1,6 +1,10 @@
 const express = require('express')
 const app = express()
 const bcrypt = require('bcrypt')
+const passport = require("passport");
+
+const initializedPassport = require("./passport-config");
+initializedPassport(passport);
 
 app.set('view-engine','ejs')
 
